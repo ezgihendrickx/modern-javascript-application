@@ -6,7 +6,7 @@
 
 ## The challenge :computer:
 
-- At the end of this challenge you will:
+At the end of this challenge you will:
 
 - be able to organize your code with multiple functions
 - be able to organize your code in multiple files
