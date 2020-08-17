@@ -8,11 +8,11 @@
 
 - At the end of this challenge you will:
 
-be able to organize your code with multiple functions
-be able to organize your code in multiple files
-be able to use a package manager to import third-party libraries in your code
-be able to use linters and formatters to make your code cleaner and more bug-free
-be able to optimize your code to be shipped to a browser faster
+- be able to organize your code with multiple functions
+- be able to organize your code in multiple files
+- be able to use a package manager to import third-party libraries in your code
+- be able to use linters and formatters to make your code cleaner and more bug-free
+- be able to optimize your code to be shipped to a browser faster
 
 
 
