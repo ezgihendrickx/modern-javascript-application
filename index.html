@@ -7,14 +7,22 @@
 
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="css/weather-icons.min.css" />
+
+    <script
+      type="text/javascript"
+      src="/node_modules/chart.js/dist/Chart.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer></script>
+    <script type="module" src="mychart.js" defer></script>
     <script type="module" src="jsmodules/index.js" defer></script>
-    <script type="module" src="jsmodules/getLocation.js" defer></script>
+    <!-- <script type="module" src="jsmodules/getLocation.js" defer></script>
     <script type="module" src="jsmodules/calcLonLat.js" defer></script>
     <script type="module" src="jsmodules/setQuery.js" defer></script>
     <script type="module" src="jsmodules/getResults.js" defer></script>
     <script type="module" src="jsmodules/displayResults.js" defer></script>
     <script type="module" src="jsmodules/dateBuilder.js" defer></script>
-    <script type="module" src="jsmodules/applyIcon.js" defer></script>
+    <script type="module" src="jsmodules/applyIcon.js" defer></script> -->
   </head>
   <body>
     <div id="app-wrap">
@@ -35,12 +43,16 @@
         <div class="current">
           <div class="temp">28 <span>°c</span></div>
           <div class="weather">Rainy</div>
-          <div class="hi-low">25°c / 23°c</div>
+          <div class="hi-low">Feels like</div>
+          <div id="spinner" class="loader"></div>
         </div>
       </main>
 
       <div class="component__weather-box">
         <div class="component__forecast-box"></div>
+      </div>
+      <div class="chart">
+        <canvas id="myChart">test</canvas>
       </div>
     </div>
   </body>
