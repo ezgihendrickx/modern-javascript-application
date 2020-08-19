@@ -23,6 +23,12 @@ This is the repository for the exercise: https://github.com/becodeorg/gnt-yu-3-2
 
 - Your Weather App feels pretty solid right now. It works, and it does its job well. But you want to publish the code publicly and use it to show your skills to potential employers. There is some work that needs to be done 🦾
 
+- Day 1 - Refactor
+- Day 2 - JavaScript Modules
+- Day 3 - Modules and the Browser
+- Day 4 - Package Manager
+- Day 5 - Linters and Formatters
+
 
 ## Author :black_nib:
 
