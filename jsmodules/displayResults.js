@@ -2,8 +2,10 @@ import { locationName } from "./calcLonLat.js";
 import { dateBuilder } from "./dateBuilder.js";
 import { applyIcon } from "./applyIcon.js";
 import { FORECAST } from "./setQuery.js";
-export let tempArray = new Array();
-export let dayArray = new Array();
+export let tempArray;
+export let dayArray;
+import { myChart } from "../mychart.js";
+//export let dayArray = new Array();
 export function displayResults(weather) {
   //shows everything in HTML
   //   console.log(weather);
@@ -25,7 +27,8 @@ export function displayResults(weather) {
   let hilow = document.querySelector(".hi-low"); //feels like?
   hilow.innerText =
     "feels like " + Math.round(weather.current.feels_like) + "°c";
-
+  tempArray = new Array();
+  dayArray = new Array();
   weather.daily.forEach((day) => {
     //change this later 5 days, this loop gives me 1 week weatherforecast
     // console.log(day);
@@ -33,6 +36,7 @@ export function displayResults(weather) {
     let days = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
     let name = days[date.getDay()];
     let dayBlock = document.createElement("div");
+
     dayArray.push(name);
     tempArray.push(day.temp.day);
     console.log(tempArray);
@@ -46,4 +50,5 @@ export function displayResults(weather) {
     )}<i class="wi wi-degrees"></i></span></div>`;
     FORECAST.appendChild(dayBlock); //puttin in the HTML
   });
+  myChart();
 }
