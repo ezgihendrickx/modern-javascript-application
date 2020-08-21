@@ -1,6 +1,7 @@
 import { tempArray, dayArray } from "./jsmodules/displayResults.js";
 export function myChart() {
   let ctx = document.getElementById("myChart").getContext("2d");
+
   let chart = new Chart(ctx, {
     // The type of chart we want to create
     type: "line",

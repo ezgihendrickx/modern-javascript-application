@@ -2,9 +2,11 @@ import { locationName } from "./calcLonLat.js";
 import { dateBuilder } from "./dateBuilder.js";
 import { applyIcon } from "./applyIcon.js";
 import { FORECAST } from "./setQuery.js";
+import { changeBgColor } from "./unsplash.js";
 export let tempArray;
 export let dayArray;
 import { myChart } from "../mychart.js";
+
 //export let dayArray = new Array();
 export function displayResults(weather) {
   //shows everything in HTML
@@ -39,8 +41,8 @@ export function displayResults(weather) {
 
     dayArray.push(name);
     tempArray.push(day.temp.day);
-    console.log(tempArray);
-    console.log(dayArray);
+    //console.log(tempArray);
+    //console.log(dayArray);
     dayBlock.className = "forecast__item"; //for icons temp actions
     dayBlock.innerHTML = `<div class="forecast-item__heading">${name}</div>
           <div class="forecast-item__info"><i class="wi ${applyIcon(
@@ -51,4 +53,5 @@ export function displayResults(weather) {
     FORECAST.appendChild(dayBlock); //puttin in the HTML
   });
   myChart();
+  changeBgColor();
 }

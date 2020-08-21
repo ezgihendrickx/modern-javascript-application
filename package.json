@@ -2,9 +2,12 @@
   "name": "weather-icons",
   "version": "2.0.10",
   "description": "222 weather themed icons inspired by Font Awesome and ready for Bootstrap",
-  "scripts": {},
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "authors": [
-    "Erik Flowers <erik@helloerik.com>"
+    "Ezgi Hendrickx"
   ],
   "license": "MIT",
   "dependencies": {
@@ -13,6 +16,7 @@
   "devDependencies": {
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "2.0.5"
   },
   "homepage": "http://erikflowers.github.io/weather-icons/",

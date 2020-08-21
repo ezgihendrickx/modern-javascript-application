@@ -312,7 +312,7 @@ var api = {
   base: "https://api.openweathermap.org/data/2.5/"
 };
 
-function getResults(location) {
+function getResults() {
   // console.log(latitude);
   fetch("".concat(api.base, "onecall?lat=").concat(_calcLonLat.latitude, "&lon=").concat(_calcLonLat.longitude, "&exlude=hourly&units=metric&APPID=").concat(api.key) //getting the weather
   ).then(function (weather) {
@@ -398,10 +398,9 @@ function setQuery(evt) {
 
 var _setQuery = require("./setQuery.js");
 
-var _mychart = require("../mychart.js");
-
 // import { getLocation } from "./getLocation.js";
 // import { calcLonLat } from "./calcLonLat.js";
+// import { myChart } from "../mychart.js";
 // import { getResults } from "./getResults.js";
 // import { displayResults } from "./displayResults.js";
 // import { dateBuilder } from "./dateBuilder.js";
@@ -409,7 +408,7 @@ var _mychart = require("../mychart.js");
 _setQuery.searchbox.addEventListener("keypress", _setQuery.setQuery); //when you enter of this input this function
 // document.getElementById("spinner").style.display = "block";
 // document.getElementById("spinner").style.display = "none";
-},{"./setQuery.js":"jsmodules/setQuery.js","../mychart.js":"mychart.js"}],"../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./setQuery.js":"jsmodules/setQuery.js"}],"../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -437,7 +436,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51253" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61245" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
