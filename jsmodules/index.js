@@ -1,7 +1,7 @@
 // import { getLocation } from "./getLocation.js";
 // import { calcLonLat } from "./calcLonLat.js";
 import { setQuery } from "./setQuery.js";
-import { myChart } from "../mychart.js";
+// import { myChart } from "../mychart.js";
 // import { getResults } from "./getResults.js";
 // import { displayResults } from "./displayResults.js";
 // import { dateBuilder } from "./dateBuilder.js";
