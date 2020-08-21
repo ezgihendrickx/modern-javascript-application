@@ -3,11 +3,12 @@
 
 export function changeBgColor() {
   let city = document.querySelector(".search").value;
+  let searchTerm = city + " architecture";
 
   let unsplashKey = "u1lGkl3nzhoQIFKbEnt0hLcENfHDmq_-kMempCiJ3Xk";
 
   fetch(
-    `https://api.unsplash.com/search/photos?query=${city}&client_id=${unsplashKey}`
+    `https://api.unsplash.com/search/photos?query=${searchTerm}&client_id=${unsplashKey}`
   )
     .then((photos) => {
       return photos.json();
