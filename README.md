@@ -29,6 +29,11 @@ This is the repository for the exercise: https://github.com/becodeorg/gnt-yu-3-2
 - Day 4 - Package Manager
 - Day 5 - Linters and Formatters
 
+## Links &#x265B;
+Find the direct link to my weatherapp here:
+- weatherapp: 
+
+
 
 ## Author :black_nib:
 
