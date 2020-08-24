@@ -31,7 +31,7 @@ This is the repository for the exercise: https://github.com/becodeorg/gnt-yu-3-2
 
 ## Links &#x265B;
 Find the direct link to my weatherapp here:
-- weatherapp: 
+- weatherapp: https://ezgihendrickx.github.io/modern-javascript-application/
 
 
 
