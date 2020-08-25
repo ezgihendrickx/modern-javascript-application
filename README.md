@@ -37,4 +37,4 @@ Find the direct link to my weatherapp here:
 
 ## Author :black_nib:
 
-Powered by Ezgi
+:star: Powered by Ezgi
